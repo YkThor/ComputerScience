@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://d.ibtimes.co.uk/en/full/1592682/computer-code.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-blue">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-blue">Why</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-blue">about me</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-blue">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Phillip o berry</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Zachary<br>Ellison</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">10th grade</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-blue w3-bluescale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Why I took Computer Science</span></h5>
+    <p>The reason for me taking Computer Science is because Computer science is a field that has the potential to revolutionize the world in countless ways. With continued advancements in technology, it can help tackle some of the biggest challenges facing society today. One of the ways it can do so is by aiding in the development of renewable energy sources. By using data analysis and machine learning, computer science can help create more efficient and sustainable energy systems that will reduce our reliance on fossil fuels and lower carbon emissions.</p>
+    <p>Also, computer science can improve healthcare outcomes through better predictive models. With the help of AI algorithms, doctors can identify potential health problems before they become serious. This can lead to earlier diagnosis and treatment, which can save lives. Additionally, with telemedicine, doctors can reach patients in remote areas and provide essential healthcare services to people who might not have access to them otherwise. These are just a few examples of how computer science can make a real difference in people's lives. With continued investment in research and development, the possibilities for using technology to improve the world are endless.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>“Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination.”</i></p>
+      <p>- Albert Einstein, physicist</p>
+    </div>
+    <img src="https://cdn.wallpapersafari.com/12/44/6Xdm2i.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">About me</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Some of my codes</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+	<p class="w3-text-white">My name is Zachary Ellison, and im a 10th grade at the school Philip o Berry. Im 15 years old and a grade higher than I should be, which initially made school a bit harder. But over time, It became easy and made me more mature for my age. I also love basketball because I have been playing it all my life. I even intend to be on the school team next year. But things haven't been all good for me. During quarantine, I became depressed. I started to eat a lot and became fat in the process. I was also doing terribly in school. It was lonely, very lonely. Then something hit me, and the way I saw things changed completely. I started going to the gym. Go out with friends more. I was trying in school. This turnaround in my life gave me the confidence to think I could overcome anything. That's why I love computer science so much because it has many challenges you have to overcome while doing it. But when you do, it sure does feel good.</p><br>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <p><a href="https://makecode.com/_DMXCv66wvDpv">Collect the Clover</p><br>
+      <p><a href="https://arcade.makecode.com/S27531-00776-80073-12736">Eat the friut</p><br> 
+      <p><a href="https://makecode.com/_4js6UR3U9P1A">Lemon Leak</p><br>
+      <p><a href="https://arcade.makecode.com/S58062-04245-17143-67057">Black Panther</p><br>
+    </div>
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
